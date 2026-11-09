@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CoastCart — Your everyday marketplace for tech, home essentials and accessories in Kenya.">
+  <title>CoastCart | Everyday finds</title>
+
+  <!-- Favicon / tab icon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,
+    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'>
+      <rect width='64' height='64' rx='16' fill='%2328644b'/>
+      <text y='44' x='50%' text-anchor='middle' font-size='38' font-family='system-ui,sans-serif' fill='%23d9eea5'>C</text>
+    </svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Boxicons for icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- Main stylesheet — imports all CSS partials -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ── Header + Side Menu (injected by loader.js) ────── -->
+  <div id="app-header"></div>
+
+  <!-- ── Main content ──────────────────────────────────── -->
+  <main>
+    <!-- Hero Slider -->
+    <div id="app-hero"></div>
+    <!-- Benefits, Marquees, Shop, Newsletter -->
+    <div id="app-content"></div>
+  </main>
+
+  <!-- ── Footer ────────────────────────────────────────── -->
+  <div id="app-footer"></div>
+
+  <!-- ── Overlays, Panels & Modals ─────────────────────── -->
+  <div id="app-cart"></div>
+  <div id="app-product-modal"></div>
+  <div id="app-checkout"></div>
+  <div id="app-auth"></div>
+  <div id="app-toast"></div>
+
+  <!-- ════ Scripts ════════════════════════════════════════ -->
+
+  <!-- Products data -->
+  <script src="js/modules/catalog.js" defer></script>
+
+  <!-- Utility helpers (must load before other modules) -->
+  <script src="js/modules/helpers.js" defer></script>
+
+  <!-- Feature modules -->
+  <script src="js/modules/hero.js" defer></script>
+  <script src="js/modules/marquee.js" defer></script>
+  <script src="js/modules/shop.js" defer></script>
+  <script src="js/modules/cart.js" defer></script>
+  <script src="js/modules/checkout.js" defer></script>
+  <script src="js/modules/auth.js" defer></script>
+  <script src="js/modules/menu.js" defer></script>
+
+  <!-- Component loader: fetches HTML partials and fires "components-loaded" -->
+  <script src="js/loader.js"></script>
+
+  <!-- Main orchestrator: wires everything together after components load -->
+  <script src="js/app.js" defer></script>
+
+</body>
+</html>

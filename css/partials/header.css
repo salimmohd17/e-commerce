@@ -1,0 +1,117 @@
+.announcement {
+  background: var(--green-dark); color: #fff;
+  padding: 9px 16px; text-align: center;
+  font-size: .7rem; letter-spacing: .14em; font-weight: 700;
+}
+
+.site-header {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(251,250,247,.95); backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+  max-width: 100%; padding: 0 28px;
+  height: var(--header-h);
+  display: flex; align-items: center; gap: 20px;
+}
+
+.logo {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: 1.25rem; font-weight: 900; letter-spacing: -.05em; white-space: nowrap;
+}
+.logo-mark {
+  width: 36px; height: 36px; border-radius: 11px;
+  display: grid; place-items: center;
+  background: var(--lime); flex-shrink: 0;
+}
+
+.hamburger {
+  display: none; font-size: 1.5rem; color: var(--ink);
+  align-items: center; justify-content: center;
+  width: 40px; height: 40px; border-radius: 10px;
+  transition: background .2s;
+}
+.hamburger:hover { background: var(--sand); }
+
+.search {
+  display: flex; flex: 1; max-width: 500px; margin: 0 auto;
+  background: #fff; border: 1px solid var(--line);
+  border-radius: 999px; padding: 5px 5px 5px 14px;
+  align-items: center; gap: 6px;
+}
+.search-icon { color: var(--muted); font-size: 1.1rem; flex-shrink: 0; }
+.search input { border: 0; outline: 0; min-width: 0; flex: 1; padding: 7px 4px; background: transparent; }
+.search button {
+  border: 0; background: var(--green); color: white;
+  padding: 9px 18px; border-radius: 999px; font-weight: 700; font-size: .86rem;
+  transition: background .2s;
+}
+.search button:hover { background: var(--green-dark); }
+
+.nav-actions { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
+.nav-icon-btn {
+  display: flex; flex-direction: column; align-items: center; gap: 2px;
+  padding: 6px 10px; border-radius: 12px; color: var(--ink);
+  font-size: .6rem; font-weight: 700; letter-spacing: .05em;
+  transition: background .2s, color .2s;
+}
+.nav-icon-btn i { font-size: 1.3rem; }
+.nav-icon-btn:hover { background: var(--sand); color: var(--green); }
+
+.cart-button {
+  display: flex; align-items: center; gap: 8px;
+  border: 1.5px solid var(--line); background: white;
+  border-radius: 999px; padding: 9px 14px; font-weight: 700;
+  transition: border-color .2s, background .2s; flex-shrink: 0;
+}
+.cart-button i { font-size: 1.2rem; }
+.cart-button:hover { border-color: var(--green); background: var(--lime); }
+.cart-count {
+  display: grid; place-items: center; background: var(--green);
+  color: white; border-radius: 50%; width: 22px; height: 22px; font-size: .75rem; font-weight: 800;
+}
+
+.side-menu-overlay {
+  position: fixed; inset: 0; background: rgba(17,28,22,.45);
+  z-index: 200; opacity: 0; pointer-events: none; transition: opacity .3s;
+}
+.side-menu-overlay.open { opacity: 1; pointer-events: all; }
+
+.side-menu {
+  position: fixed; top: 0; left: 0; bottom: 0;
+  width: min(320px, 85vw); z-index: 201;
+  background: var(--white); display: flex; flex-direction: column;
+  transform: translateX(-105%); transition: transform .3s cubic-bezier(.4,0,.2,1);
+  overflow-y: auto;
+}
+.side-menu.open { transform: translateX(0); }
+
+.side-menu-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 18px 20px; border-bottom: 1px solid var(--line);
+}
+.menu-close { font-size: 1.4rem; }
+
+.menu-user-area {
+  display: flex; align-items: center; gap: 14px;
+  padding: 18px 20px; background: var(--sand); border-bottom: 1px solid var(--line);
+}
+.menu-avatar { font-size: 2.4rem; color: var(--muted); line-height: 1; }
+.menu-user-name { font-weight: 700; font-size: .95rem; margin-bottom: 3px; }
+.menu-login-link {
+  font-size: .82rem; color: var(--green); font-weight: 700;
+  text-decoration: underline;
+}
+
+.menu-section-label {
+  padding: 14px 20px 6px;
+  font-size: .65rem; font-weight: 800; letter-spacing: .14em;
+  color: var(--muted); text-transform: uppercase;
+}
+.menu-list { padding: 0; }
+.menu-item {
+  display: flex; align-items: center; gap: 12px;
+  padding: 13px 22px; font-size: .92rem; font-weight: 500;
+  color: var(--ink); transition: background .15s, color .15s;
+  border-bottom: 1px solid transparent;
+}
+.menu-item i { font-size: 1.1rem; color: var(--green); }
+.menu-item:hover { background: var(--sand); color: var(--green); }

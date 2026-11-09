@@ -1,0 +1,42 @@
+/* ── Footer ──────────────────────────────────────────────── */
+.site-footer { max-width: 1184px; margin: auto; padding: 0 16px 30px; }
+.footer-top {
+  display: flex; gap: 40px; padding: 50px 0 36px;
+  border-bottom: 1px solid var(--line); flex-wrap: wrap;
+}
+.footer-brand { flex: 1; min-width: 220px; }
+.footer-tagline { color: var(--muted); font-size: .86rem; margin: 14px 0 18px; line-height: 1.6; }
+.footer-socials { display: flex; gap: 12px; }
+.footer-socials a {
+  display: grid; place-items: center; width: 36px; height: 36px;
+  border-radius: 50%; border: 1px solid var(--line); font-size: 1.1rem;
+  transition: background .2s, border-color .2s, color .2s;
+}
+.footer-socials a:hover { background: var(--green); border-color: var(--green); color: white; }
+
+.footer-links { display: flex; gap: 40px; flex-wrap: wrap; }
+.footer-links h4 { font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 800; margin-bottom: 14px; }
+.footer-links ul { display: flex; flex-direction: column; gap: 10px; }
+.footer-links a { font-size: .88rem; color: var(--ink); transition: color .2s; }
+.footer-links a:hover { color: var(--green); }
+
+.footer-bottom {
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 12px; padding-top: 22px;
+}
+.footer-bottom p { color: var(--muted); font-size: .78rem; }
+.footer-credit { display: flex; align-items: center; gap: 6px; font-size: .82rem; color: var(--muted); }
+
+.bms-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: #0a0a0a; color: #00c8ff; padding: 6px 14px;
+  border-radius: 999px; font-weight: 700; font-size: .78rem;
+  border: 1px solid #00c8ff40;
+  transition: background .2s, transform .2s, box-shadow .2s;
+  box-shadow: 0 0 8px rgba(0,200,255,.25);
+}
+.bms-btn:hover { background: #111; transform: translateY(-1px); box-shadow: 0 0 16px rgba(0,200,255,.45); }
+.bms-logo-img {
+  width: 22px; height: 22px; border-radius: 50%; object-fit: cover;
+  border: 1px solid #00c8ff50;
+}

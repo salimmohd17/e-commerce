@@ -1,0 +1,69 @@
+  <!-- ── Benefits bar ─────────────────────────────────── -->
+  <section class="benefits" aria-label="Store benefits">
+    <div><i class='bx bx-check-shield'></i><strong>Buyer Protection</strong><span>100% secure checkout</span></div>
+    <div><i class='bx bx-car'></i><strong>Fast Delivery</strong><span>Delivered to your door</span></div>
+    <div><i class='bx bx-tag-alt'></i><strong>Clear Pricing</strong><span>Prices shown in KSh</span></div>
+    <div><i class='bx bx-support'></i><strong>24/7 Support</strong><span>Always here to help</span></div>
+  </section>
+
+  <!-- ── Top Selling (Infinite horizontal scroll) ─────── -->
+  <section class="marquee-section" id="top-selling">
+    <div class="section-heading" style="padding: 0 16px;">
+      <div><p class="eyebrow">COMMUNITY FAVOURITES</p><h2>Top Selling</h2></div>
+      <a href="#shop" class="view-all-link">View all <i class='bx bx-chevron-right'></i></a>
+    </div>
+    <div class="marquee-wrapper">
+      <div class="marquee-track" id="top-selling-track"></div>
+    </div>
+  </section>
+
+  <!-- ── Flash Sales (Infinite horizontal scroll) ──────── -->
+  <section class="marquee-section flash-section" id="flash-sales">
+    <div class="section-heading" style="padding: 0 16px;">
+      <div><p class="eyebrow" style="color:#e65100">🔥 LIMITED TIME</p><h2>Flash Sales</h2></div>
+      <div class="flash-timer" id="flash-timer">Ends in: <strong id="flash-countdown">--:--:--</strong></div>
+    </div>
+    <div class="marquee-wrapper">
+      <div class="marquee-track marquee-reverse" id="flash-sales-track"></div>
+    </div>
+  </section>
+
+  <!-- ── Shop Section ─────────────────────────────────── -->
+  <section class="shop-section" id="shop">
+    <div class="section-heading">
+      <div><p class="eyebrow">THE COLLECTION</p><h2>Shop the essentials</h2></div>
+      <p id="result-count" class="result-count">Loading products...</p>
+    </div>
+    <div class="shop-controls">
+      <div class="filters" id="category-filters" aria-label="Filter by category">
+        <button class="filter active" data-category="All" type="button">All products</button>
+        <button class="filter" data-category="Tech" type="button">Tech</button>
+        <button class="filter" data-category="Home" type="button">Home</button>
+        <button class="filter" data-category="Accessories" type="button">Accessories</button>
+      </div>
+      <label class="sort-label" for="sort-select">Sort by
+        <select id="sort-select">
+          <option value="featured">Featured</option>
+          <option value="low-high">Price: low to high</option>
+          <option value="high-low">Price: high to low</option>
+          <option value="name">Name: A–Z</option>
+        </select>
+      </label>
+    </div>
+    <div id="product-grid" class="product-grid" aria-live="polite"></div>
+    <div id="empty-state" class="empty-state" hidden>
+      <h3>No products found</h3><p>Try another search term or category.</p>
+      <button class="secondary-button" id="clear-search" type="button">Clear filters</button>
+    </div>
+  </section>
+
+  <!-- ── Newsletter ────────────────────────────────────── -->
+  <section class="newsletter">
+    <div><p class="eyebrow">STAY IN THE LOOP</p><h2>Good things, occasionally.</h2><p>Join our mailing list for product updates and exclusive deals.</p></div>
+    <form id="newsletter-form" class="newsletter-form">
+      <label class="sr-only" for="email-input">Email address</label>
+      <input id="email-input" type="email" placeholder="Your email address" required>
+      <button type="submit">Sign me up</button>
+    </form>
+    <p id="newsletter-message" class="form-message" aria-live="polite"></p>
+  </section>

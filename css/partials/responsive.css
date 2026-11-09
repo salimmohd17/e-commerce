@@ -1,0 +1,69 @@
+/* ════════════════════════════════════════════════════════════
+   CoastCart — responsive.css  (BMS TECHS)
+   ════════════════════════════════════════════════════════════ */
+
+/* ── Tablet (≤1024px) ────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .product-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+  .benefits { grid-template-columns: repeat(2,1fr); }
+}
+
+/* ── Medium (≤900px) ─────────────────────────────────────── */
+@media (max-width: 900px) {
+  .site-header { padding: 0 16px; gap: 12px; }
+  .search { max-width: 340px; }
+  .hero-slide { grid-template-columns: 1fr 1fr; padding: 42px 5%; }
+  .hero-slide-art { transform: scale(.85); }
+}
+
+/* ── Mobile (≤768px) ─────────────────────────────────────── */
+@media (max-width: 768px) {
+  .hamburger { display: flex; }
+  .nav-icon-label { display: none; }
+  .nav-icon-btn { padding: 6px; }
+  .search { order: 10; flex-basis: 100%; max-width: none; margin: 0; }
+  .site-header { flex-wrap: wrap; height: auto; padding: 12px 16px; gap: 10px; }
+  .logo { font-size: 1.1rem; }
+
+  /* Cart: icon only on mobile */
+  .cart-text { display: none; }
+  .cart-button { padding: 9px 12px; gap: 6px; }
+
+  .product-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px 12px; }
+  .hero-slide { grid-template-columns: 1fr; padding: 36px 22px 18px; }
+  .hero-slide-art { min-height: 220px; transform: scale(.8); transform-origin: top center; margin-bottom: -30px; }
+  .hero-slide-copy h1 { font-size: 2.8rem; }
+  .benefits { grid-template-columns: repeat(2,1fr); margin: 0 16px; }
+  .marquee-section { margin-left: 12px; margin-right: 12px; }
+  .shop-section { margin-left: 14px; margin-right: 14px; }
+  .newsletter { margin-left: 14px; margin-right: 14px; padding: 28px 20px; }
+  .newsletter-form { flex-direction: column; width: 100%; }
+  .newsletter-form button { padding: 13px; }
+
+  .modal-inner { grid-template-columns: 1fr; }
+  .modal-visual { border-radius: 24px 24px 0 0; min-height: 220px; font-size: 5rem; }
+  .product-modal { width: 94vw; top: auto; bottom: 0; transform: translate(-50%, 0); border-radius: 24px 24px 0 0; max-height: 90vh; }
+
+  .footer-top { flex-direction: column; gap: 28px; }
+  .footer-links { gap: 24px; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; gap: 8px; }
+
+  .shop-controls { flex-direction: column; align-items: flex-start; }
+  .section-heading { align-items: flex-start; flex-direction: column; gap: 8px; }
+
+  .social-auth { grid-template-columns: 1fr 1fr; }
+  .auth-modal { padding: 28px 20px; }
+  .form-grid { grid-template-columns: 1fr; }
+  .pay-step { font-size: .72rem; }
+}
+
+/* ── Small mobile (≤480px) ───────────────────────────────── */
+@media (max-width: 480px) {
+  .product-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 14px 10px; }
+  .product-visual { height: 165px; border-radius: 14px; }
+  .product-emoji { font-size: 3.8rem; }
+  .hero-slide-copy h1 { font-size: 2.2rem; }
+  .mq-card { width: 165px; }
+  .mq-visual { height: 120px; font-size: 2.8rem; }
+  .benefits { grid-template-columns: 1fr 1fr; gap: 12px; }
+}

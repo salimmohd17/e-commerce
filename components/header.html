@@ -1,0 +1,90 @@
+<!-- Announcement bar -->
+<div class="announcement"> WELCOME TO COASTCART — SIMPLE FINDS, EVERY DAY &nbsp;|&nbsp; FREE DELIVERY OVER KSh 3,000</div>
+
+<header class="site-header">
+  <button class="hamburger" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="side-menu">
+    <i class='bx bx-menu'></i>
+  </button>
+
+  <a class="logo" href="index.html" aria-label="CoastCart home">
+    <span class="logo-mark">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" stroke="#1b4936" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="3" y1="6" x2="21" y2="6" stroke="#1b4936" stroke-width="2" stroke-linecap="round"/>
+        <path d="M16 10a4 4 0 01-8 0" stroke="#1b4936" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </span>
+    CoastCart
+  </a>
+
+  <form class="search" id="search-form" role="search">
+    <label class="sr-only" for="search-input">Search products</label>
+    <i class='bx bx-search search-icon'></i>
+    <input id="search-input" type="search" placeholder="Search products..." autocomplete="off">
+    <button type="submit" aria-label="Search">Search</button>
+  </form>
+
+  <div class="nav-actions">
+    <button class="nav-icon-btn" id="account-toggle" type="button" aria-label="My account" title="My Account">
+      <i class='bx bx-user'></i>
+      <span class="nav-icon-label">Account</span>
+    </button>
+    <button class="nav-icon-btn" id="wishlist-nav-btn" type="button" aria-label="Wishlist" title="Wishlist">
+      <i class='bx bx-heart'></i>
+      <span class="nav-icon-label">Wishlist</span>
+    </button>
+    <button class="cart-button" id="cart-toggle" type="button" aria-controls="cart-panel">
+      <i class='bx bx-cart-alt'></i>
+      <span class="cart-text">Cart</span>
+      <span id="cart-count" class="cart-count">0</span>
+    </button>
+  </div>
+</header>
+
+<div class="side-menu-overlay" id="side-menu-overlay"></div>
+<nav class="side-menu" id="side-menu" aria-label="Main navigation" aria-hidden="true">
+  <div class="side-menu-header">
+    <a class="logo" href="index.html">
+      <span class="logo-mark">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" stroke="#1b4936" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="3" y1="6" x2="21" y2="6" stroke="#1b4936" stroke-width="2" stroke-linecap="round"/><path d="M16 10a4 4 0 01-8 0" stroke="#1b4936" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      CoastCart
+    </a>
+    <button class="icon-button menu-close" id="menu-close" type="button" aria-label="Close menu">
+      <i class='bx bx-x'></i>
+    </button>
+  </div>
+
+  <div class="menu-user-area" id="menu-user-area">
+    <div class="menu-avatar"><i class='bx bx-user-circle'></i></div>
+    <div>
+      <p class="menu-user-name">Welcome!</p>
+      <button class="menu-login-link" id="menu-login-btn" type="button">Sign in / Register</button>
+    </div>
+  </div>
+
+  <ul class="menu-list">
+    <li><a href="#" id="menu-account-link" class="menu-item"><i class='bx bx-user'></i> My CoastCart Account</a></li>
+    <li><a href="#" class="menu-item"><i class='bx bx-package'></i> Orders</a></li>
+    <li><a href="#" class="menu-item"><i class='bx bx-star'></i> Reviews</a></li>
+    <li><a href="#" class="menu-item"><i class='bx bx-purchase-tag'></i> Vouchers</a></li>
+    <li><a href="#" class="menu-item"><i class='bx bx-heart'></i> Wishlist</a></li>
+  </ul>
+
+  <div class="menu-section-label">Our Categories</div>
+  <ul class="menu-list">
+    <li><a href="#" class="menu-item" data-menu-category="Tech"><i class='bx bx-chip'></i> Tech</a></li>
+    <li><a href="#" class="menu-item" data-menu-category="Home"><i class='bx bx-home-heart'></i> Home Essentials</a></li>
+    <li><a href="#" class="menu-item" data-menu-category="Accessories"><i class='bx bx-diamond'></i> Accessories</a></li>
+    <li><a href="#" class="menu-item" data-menu-category="Fashion"><i class='bx bx-tshirt'></i> Fashion</a></li>
+    <li><a href="#" class="menu-item" data-menu-category="Sports"><i class='bx bx-football'></i> Sports</a></li>
+  </ul>
+
+  <div class="menu-section-label">Our Services</div>
+  <ul class="menu-list">
+    <li><a href="#" class="menu-item"><i class='bx bx-car'></i> Fast Delivery</a></li>
+    <li><a href="#" class="menu-item"><i class='bx bx-shield-quarter'></i> Buyer Protection</a></li>
+    <li><a href="#" class="menu-item"><i class='bx bx-support'></i> 24/7 Support</a></li>
+    <li><a href="#" class="menu-item"><i class='bx bx-refresh'></i> Easy Returns</a></li>
+  </ul>
+</nav>

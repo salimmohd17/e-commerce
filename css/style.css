@@ -1,0 +1,12 @@
+/* ════════════════════════════════════════════════════════════
+   CoastCart — style.css   (BMS TECHS)
+   Main stylesheet — imports all partials
+   ════════════════════════════════════════════════════════════ */
+
+@import url('partials/base.css');
+@import url('partials/header.css');
+@import url('partials/hero.css');
+@import url('partials/content.css');
+@import url('partials/overlays.css');
+@import url('partials/footer.css');
+@import url('partials/responsive.css');

@@ -1,0 +1,85 @@
+<div class="payment-overlay" id="payment-overlay" hidden></div>
+<div class="payment-panel" id="payment-panel" role="dialog" aria-modal="true" aria-label="Checkout" hidden>
+  <div class="payment-header">
+    <button class="icon-button" id="payment-close" type="button" aria-label="Close checkout"><i class='bx bx-arrow-back'></i></button>
+    <h2>Checkout</h2>
+    <span class="payment-secure"><i class='bx bx-lock-alt'></i> Secure</span>
+  </div>
+  <div class="payment-body">
+    <div class="payment-steps">
+      <div class="pay-step active" data-step="1"><span>1</span> Delivery</div>
+      <div class="pay-step" data-step="2"><span>2</span> Payment</div>
+      <div class="pay-step" data-step="3"><span>3</span> Confirm</div>
+    </div>
+
+    <div class="pay-step-content" id="pay-step-1">
+      <h3>Delivery Details</h3>
+      <div class="form-grid">
+        <label>Full Name<input type="text" placeholder="John Mwangi" id="pay-name"></label>
+        <label>Phone Number<input type="tel" placeholder="+254 7XX XXX XXX" id="pay-phone"></label>
+        <label class="full-width">Email Address<input type="email" placeholder="you@example.com" id="pay-email"></label>
+        <label>County / Region<input type="text" placeholder="Mombasa" id="pay-region"></label>
+        <label>Town / Area<input type="text" placeholder="Nyali" id="pay-town"></label>
+        <label class="full-width">Delivery Address<textarea rows="2" placeholder="Plot 12, Street Name..." id="pay-address"></textarea></label>
+      </div>
+      <button class="primary-button full-btn" id="pay-next-1" type="button">Next: Payment <i class='bx bx-chevron-right'></i></button>
+    </div>
+
+    <div class="pay-step-content hidden" id="pay-step-2">
+      <h3>Select Payment Method</h3>
+      <div class="payment-methods">
+        <label class="pay-method">
+          <input type="radio" name="pay-method" value="mpesa" checked>
+          <span class="pay-method-label"><i class='bx bx-mobile-alt'></i> M-Pesa</span>
+        </label>
+        <label class="pay-method">
+          <input type="radio" name="pay-method" value="card">
+          <span class="pay-method-label"><i class='bx bx-credit-card'></i> Visa / Mastercard</span>
+        </label>
+        <label class="pay-method">
+          <input type="radio" name="pay-method" value="airtel">
+          <span class="pay-method-label"><i class='bx bx-signal-5'></i> Airtel Money</span>
+        </label>
+        <label class="pay-method">
+          <input type="radio" name="pay-method" value="cod">
+          <span class="pay-method-label"><i class='bx bx-money'></i> Cash on Delivery</span>
+        </label>
+      </div>
+
+      <div class="mpesa-fields" id="mpesa-fields">
+        <label>M-Pesa Number<input type="tel" placeholder="254 7XX XXX XXX" id="mpesa-number"></label>
+        <p class="pay-hint">You will receive an STK push to complete payment.</p>
+      </div>
+
+      <div class="card-fields hidden" id="card-fields">
+        <label>Card Number<input type="text" placeholder="1234 5678 9012 3456" maxlength="19"></label>
+        <div class="form-row">
+          <label>Expiry<input type="text" placeholder="MM / YY" maxlength="7"></label>
+          <label>CVV<input type="text" placeholder="123" maxlength="3"></label>
+        </div>
+        <label>Cardholder Name<input type="text" placeholder="John Mwangi"></label>
+      </div>
+
+      <div class="order-summary" id="order-summary">
+        <h4>Order Summary</h4>
+        <div class="order-lines" id="order-lines"></div>
+        <div class="order-total-row"><span>Total</span><strong id="order-total"></strong></div>
+      </div>
+
+      <div class="pay-btn-row">
+        <button class="secondary-button" id="pay-back-2" type="button"><i class='bx bx-chevron-left'></i> Back</button>
+        <button class="primary-button" id="pay-next-2" type="button">Place Order <i class='bx bx-check'></i></button>
+      </div>
+    </div>
+
+    <div class="pay-step-content hidden" id="pay-step-3">
+      <div class="pay-success">
+        <div class="pay-success-icon"><i class='bx bx-check-circle'></i></div>
+        <h3>Order Placed!</h3>
+        <p>Thank you for shopping with CoastCart. Your order has been received and will be processed shortly.</p>
+        <p class="pay-ref">Order Ref: <strong id="pay-order-ref"></strong></p>
+        <button class="primary-button" id="pay-done" type="button">Continue Shopping</button>
+      </div>
+    </div>
+  </div>
+</div>
